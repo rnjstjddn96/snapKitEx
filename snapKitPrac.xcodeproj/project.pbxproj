@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65712FAF608BFC7D52DD996A /* Pods_snapKitPrac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB83F74588F463CD1532A49F /* Pods_snapKitPrac.framework */; };
 		EA8E609424909F56003288A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E609324909F56003288A3 /* AppDelegate.swift */; };
 		EA8E609624909F56003288A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E609524909F56003288A3 /* SceneDelegate.swift */; };
 		EA8E609824909F56003288A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E609724909F56003288A3 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21A1CD50FDD03478EFD67531 /* Pods-snapKitPrac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snapKitPrac.debug.xcconfig"; path = "Target Support Files/Pods-snapKitPrac/Pods-snapKitPrac.debug.xcconfig"; sourceTree = "<group>"; };
+		E14099707DD3B3CBF4471C64 /* Pods-snapKitPrac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snapKitPrac.release.xcconfig"; path = "Target Support Files/Pods-snapKitPrac/Pods-snapKitPrac.release.xcconfig"; sourceTree = "<group>"; };
 		EA8E609024909F56003288A3 /* snapKitPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapKitPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8E609324909F56003288A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8E609524909F56003288A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EA8E609C24909F56003288A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8E609F24909F56003288A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8E60A124909F56003288A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB83F74588F463CD1532A49F /* Pods_snapKitPrac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapKitPrac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65712FAF608BFC7D52DD996A /* Pods_snapKitPrac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1101F8780D5CC61EF371BB25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21A1CD50FDD03478EFD67531 /* Pods-snapKitPrac.debug.xcconfig */,
+				E14099707DD3B3CBF4471C64 /* Pods-snapKitPrac.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD8772C889079EB14718A88D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB83F74588F463CD1532A49F /* Pods_snapKitPrac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA8E608724909F56003288A3 = {
 			isa = PBXGroup;
 			children = (
 				EA8E609224909F56003288A3 /* snapKitPrac */,
 				EA8E609124909F56003288A3 /* Products */,
+				1101F8780D5CC61EF371BB25 /* Pods */,
+				DD8772C889079EB14718A88D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA8E60A424909F56003288A3 /* Build configuration list for PBXNativeTarget "snapKitPrac" */;
 			buildPhases = (
+				591C5837333FA1AD7B59EC04 /* [CP] Check Pods Manifest.lock */,
 				EA8E608C24909F56003288A3 /* Sources */,
 				EA8E608D24909F56003288A3 /* Frameworks */,
 				EA8E608E24909F56003288A3 /* Resources */,
+				4082BFFE397BF48B302F8B49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4082BFFE397BF48B302F8B49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-snapKitPrac/Pods-snapKitPrac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-snapKitPrac/Pods-snapKitPrac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-snapKitPrac/Pods-snapKitPrac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		591C5837333FA1AD7B59EC04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-snapKitPrac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA8E608C24909F56003288A3 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		EA8E60A524909F56003288A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21A1CD50FDD03478EFD67531 /* Pods-snapKitPrac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		EA8E60A624909F56003288A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14099707DD3B3CBF4471C64 /* Pods-snapKitPrac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
